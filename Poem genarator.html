@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>English Poem Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>English Poem Generator</h1>
+      </header>
+      <main>
+        <div class="form-container">
+          <form id="poem-generator-form">
+            <input
+              type="text"
+              placeholder="Enter a topic for the poem"
+              autofocus
+              required
+              class="instructions"
+              id="user-instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e: flower, spring or anything you like</div>
+        </div>
+        <div class="poem hidden" id="poem"></div>
+      </main>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/Since-98">Farhiya Omar</a> and is
+        open-sourced on GitHub and Netlify
+      </footer>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
